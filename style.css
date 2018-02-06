@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|PT+Serif');
+nav{
+	position: relative;
+}
+.navbar{
+	border-radius: 0;
+	background-color: #19647E;
+}
+.nav-brand{
+	color:#fff;
+	font-family: 'Bree Serif', serif;
+	padding: 0 15px;
+}
+.icon-img{
+	width: 20px;
+	height: 20px;
+	color: #FFF;
+}
+#count{
+	position: absolute;
+	color:#FFF;
+	top: 12px;
+	right: 15px;
+	background: #28AFB0;
+	width:80px;
+	height:80px;
+	border-radius: 50%;
+}
+#rate-limit{
+	padding: 0 8px;
+	font-size: 1.1em;
+	font-weight: bold;
+	line-height: 20px;
+	position: relative;
+	left:0;
+	right: 0;
+	top: 40px;
+}
+/*game table 
+/-----------/
+*/
+#tbl-container{
+	border-radius: 5px;
+	margin: 10px 0;
+	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/gaming-pattern.png");
+}
+#game-tbl{
+	padding: 2px;
+	font-family: 'PT Serif', serif;
+}
+#game-tbl th{
+	background-color: #0A0908;
+	color: #F4E8C1;
+}
+#game-tbl>tbody{
+	color: #0A0908;
+}
+#game-tbl>tbody tr:nth-child(odd){
+	background-color: rgba(244,232,193,0.5);
+}
+#game-tbl>tbody tr:nth-child(even){
+	background-color: rgba(25,100,126,0.4);
+}
+#Platform-filter,#Platform-filter:hover,#genre-filter,#genre-filter:hover{
+	background-color: transparent;
+	border: 2px solid #0A0908;
+	color: #0A0908;
+}
+.EC:empty{
+	display: none;
+}
+.EC{
+	min-height:20px;
+	min-width:20px;
+	color:#fff;
+	background-color: #27ae60;
+	padding: 2px;
+}
+.filter-section{
+	display: inline-block;
+	margin-top: 8px;
+}
+#score-sort{
+	cursor: pointer;
+}
+li.platform,li.genre{
+	cursor:pointer;
+	padding: 12px;
+	font-size: 1em;
+}
+li.platform:hover, li.selected,li.genre:hover{
+	background-color: #19647E;
+	color: #FFF;
+}
+
+@media only screen and (max-width:419px){
+	#count{
+		display:none;
+	}
+}

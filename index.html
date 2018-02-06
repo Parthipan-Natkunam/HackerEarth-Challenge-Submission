@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+			<h2 class="nav-brand">Game Data Store</h2>
+			<div class="pull-right text-center" id="count">
+				<span id="rate-limit"></span>
+				<p>Rate Limit</p>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container-fluid">
+			<div class="dropdown filter-section">
+				<button class="btn btn-primary dropdown-toggle" id="Platform-filter" data-toggle="dropdown">Filter By Platform&nbsp;<span class="caret"></span></button>
+				<ul class="dropdown-menu" id="platform-list">
+					
+				</ul>
+			</div>
+			<div class="dropdown filter-section">
+				<button class="btn btn-primary dropdown-toggle" id="genre-filter" data-toggle="dropdown">Filter By Genre&nbsp;<span class="caret"></span></button>
+				<ul class="dropdown-menu" id="genre-list">
+					
+				</ul>
+			</div>
+			<div class="filter-section">
+				<input type="text" id="search-box" placeholder="Search by Title" />
+			</div>
+				<div id="tbl-container">
+					<table class="table" id="game-tbl">
+						<thead>
+							<th>Title</th>
+							<th>Platform</th>
+							<th>Score&nbsp;<span id="score-sort"><i class="fa fa-caret-down"></i></span></th>
+							<th>Genre</th>
+						</thead>
+						<tbody id="game-data">
+							<tr>
+								<td class="text-center" colspan="4"> Fetching Data..Please Wait...</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+		</div>
+	</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="libs/underscore.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
